@@ -43,3 +43,4 @@ if (estatura>=1.90)
 else
     document.write("Es una persona de estatura promedio");
     datos.innerHTML +="<hr><h3> Es una persona de estatura promedio</h3>";
+    `}

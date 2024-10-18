@@ -18,15 +18,14 @@ function operaciones() {
                 ope = n1 * n2;
                 break;
             case "/":
-                ope = n1 / n2;
-                break;  
+                ope = n1 / n2; break;  
             default:
                 ope = "Operación no válida";
         }
-        let respuesta = document.getElementById("resultado");
-        respuesta.innerHTML = `<h3><hr>  ${n1}  ${op}  ${n2} = ${ope}</h3>`;
+        respuesta = document.getElementById("resultado").innerHTML=`<h2> ${n1}  ${tipoope}  ${n2} = ${ope}</h2>`;
     } 
     else
+    respuesta = document.getElementById("resultado").innerHTML=`<h2>Ingrese solo numeros por favor</h2>`;
         alert('Alerta: Ingrese solo números por favor');
 }
 

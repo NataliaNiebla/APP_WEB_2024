@@ -7,7 +7,8 @@ body{
     font-family: Arial, Arial, Helvetica, sans-serif;
     background-image: url(imagenfondo.jpg);
     background-size: cover;
-    height: 100max;
+    background-repeat: no-repeat;
+    /*height: 100max;*/
 }
 
 #principal{
@@ -19,11 +20,22 @@ body{
 h1{
     padding-top: 4vw;
     padding-bottom: 4vw;
-    text-align: center;
+    text-align:center;
     color:white;
     font-size: 3vw;
     font-weight: normal;
     font-style: italic;
+}
+
+h2{
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    text-align:center;
+    color:white;
+    font-size: 3vw;
+    font-weight: normal;
+    font-style: italic;
+    background-color: hsla(0, 0%, 5%, 0.396);
 }
 
 form{
@@ -32,3 +44,39 @@ form{
     color: white;
     font-size:2vw;
 }
+
+hr{
+    color: white;
+}
+
+.caja1{
+    font-size: 2vw;
+    font-weight: bolder;
+    color: black;
+}
+
+#tipo{
+    width: auto;
+}
+
+#boton{
+    margin-top: 2vw;
+    padding: 2vw;
+    font-size: 2vw;
+    background-color: #09bcf7;
+    border-radius: 10%;
+    border: 1px solid #09bcf7;
+    color: white;
+}
+
+#boton:hover{
+    background-color: black;
+    border: 1px solid #09bcf7;
+}
+
+#boton:active{
+    background-color: #1ded1d;
+    border: 1px solid #1ded1d;
+    color:black;
+}
+

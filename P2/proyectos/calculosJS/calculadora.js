@@ -6,7 +6,6 @@ function operaciones() {
      tipoope = document.getElementById("tipo").value;
 
     if (isnumber(n1) && isnumber(n2)) {   
-        let ope;
         switch(tipoope) {
             case "+":
                 ope = n1 + n2;
@@ -19,13 +18,12 @@ function operaciones() {
                 break;
             case "/":
                 ope = n1 / n2; break;  
-            default:
-                ope = "Operación no válida";
         }
         respuesta = document.getElementById("resultado").innerHTML=`<h2> ${n1}  ${tipoope}  ${n2} = ${ope}</h2>`;
     } 
     else
-    respuesta = document.getElementById("resultado").innerHTML=`<h2>Ingrese solo numeros por favor</h2>`;
+    respuesta = document.getElementById("resultado");
+    respuesta.innerHTML=`<h2>Ingrese solo numeros por favor</h2>`;
         alert('Alerta: Ingrese solo números por favor');
 }
 

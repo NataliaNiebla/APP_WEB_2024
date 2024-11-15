@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    background-image: url(fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+
+
+

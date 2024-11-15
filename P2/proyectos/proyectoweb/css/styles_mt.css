@@ -1,0 +1,264 @@
+@font-face {
+    font-family: 'adelia';
+    src: url('../fonts/adelia.otf') format('opentype');
+  }
+
+body {
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+#inicio{
+  margin: 0 auto;
+  width: 100%;
+  background-color: rgba(142, 128, 232, 0.501);
+}
+
+hr {
+  border: none;
+  height: 0;
+  padding: 2rem;
+}
+
+.menu {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .1rem;
+  font-family: 'courier new';
+}
+
+
+.menu p{
+    display: inline;
+    font-size: 2em;
+    color: rgb(255, 44, 142);
+    font-weight: bold;
+    font-family: 'adelia';
+}
+
+.lista{
+  display: flex;
+  list-style-type: none;
+}
+
+.lista li{
+  margin-left: 1.5vw;
+  justify-content: center;
+}
+
+.btn-menu{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.btn-menu:hover{
+  cursor: pointer;
+  color: white;
+  font-size: 1.4rem;
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.btn-menu:active{
+  color: rgb(255, 44, 142);
+}
+
+@keyframes colorChange {
+  0% { color: rgba(255, 0, 119, 0.627); }    /* Rosa */
+  10% { color: rgba(255, 69, 0, 0.627); }    /* Naranja fuerte */
+  20% { color: rgba(255, 165, 0, 0.627); }   /* Naranja */
+  30% { color: rgba(255, 255, 0, 0.627); }   /* Amarillo */
+  40% { color: rgba(173, 255, 47, 0.627); }  /* Verde amarillo */
+  50% { color: rgba(0, 255, 0, 0.627); }     /* Verde */
+  60% { color: rgba(0, 255, 255, 0.627); }   /* Cian */
+  70% { color: rgba(0, 0, 255, 0.627); }     /* Azul */
+  80% { color: rgba(75, 0, 130, 0.627); }    /* Índigo */
+  90% { color: rgba(238, 130, 238, 0.627); } /* Violeta */
+  100% { color: rgba(255, 0, 119, 0.627); }  /* De regreso al Rosa */
+}
+
+
+#intro {
+  margin-top: 1rem;
+}
+
+#intro h1 {
+    font-family: "adelia";
+    font-size: 3em;
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: colorChange 10s infinite;
+}
+
+#intro p {
+  font-family: 'Courier New';
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 2rem;
+  margin-top: 0%;
+  text-align: center;
+}
+
+#menu2 h2 {
+  padding-top: 1rem;
+  color: rgb(255, 44, 142);
+  font-size: 2em;
+  width: 90%;
+  margin: 0 auto;
+  font-family: 'adelia';
+}
+
+#menu2 ol{
+  text-decoration: none;
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+#menu2 li{
+  background-color: rgba(250, 255, 163, 0.908);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  border-radius: 2px;
+  padding: .5rem;
+  font-size: 1em;
+  font-family: 'Courier New';
+  font-weight: bold;
+}
+
+a {
+  color:black;
+}
+
+#menu2 li:hover{
+  background-color: rgba(255, 0, 119, 0.33);
+  font-family: 'Courier New';
+  font-size: 1.2rem;
+  transition: 0.5s;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+a:hover {
+  color:white;
+}
+
+.contenedor {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1920px;
+  background-color: rgba(142, 128, 232, 0.501);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'courier new';
+  display: flex;
+  position: relative;
+}
+
+.contenedor h2 {
+  color: white;
+  font-size: 1.8rem;
+  margin-top: 0;
+  text-align: center;
+  font-family: 'adelia';
+}
+
+.contenedor h3 {
+  color: black;
+  font-size: 1.5em;
+  width: 100%;
+  font-weight: bold;
+  padding-top: 1.5rem;
+  padding-left: 2.3rem;
+}
+
+.contenedor img {
+  width: 50%;
+  border-radius: 20px;
+  transition: width 0.5s ease-in-out;
+  margin-right: 2rem;
+}
+
+.contenedor img:hover {
+  width: 55%;
+}
+
+.contenedor p{
+  position: absolute;
+  width: 45%;
+  display: inline-block;
+}
+
+.contenedor a {
+  display: inline-block;
+  position: absolute;
+  background-color: rgba(240, 255, 255, 0.831);
+  padding: 1rem;
+  margin-top: 8rem; /* Añade espacio en la parte superior del botón */
+  text-align: center;
+  text-decoration: none;
+  color: #000; /* Color del texto */
+  font-weight: bold;
+  width: auto; /* Ajusta el ancho al contenido */
+  border-radius: 10px;
+}
+
+.contenedor a:hover {
+  background-color: rgba(255, 0, 119, 0.33);
+  color: white;
+  transition: 0.5s;
+  padding: 1.2rem;
+}
+
+.contenedor a:active {
+  background-color: rgba(223, 179, 199, 0.33);
+  color: white;
+  padding: 1rem;
+}
+
+#creacion_literaria h3{
+  padding: 1rem;
+ 
+}
+
+#creacion_literaria p {
+  padding: 1px;
+  text-align: center;
+  position: absolute;
+  width: 50%;
+  display: inline-block;
+}
+
+#creacion_literaria img {
+  width: 30%;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#creacion_literaria img:hover {
+  width: 35%;
+}
+
+
+
+
+
+
+
+

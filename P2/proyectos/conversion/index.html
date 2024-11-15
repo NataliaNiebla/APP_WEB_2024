@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Basica</title>
+    <script src="conversion.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="principal">
+        <h2>.: Conversor de Moneda :.</h2>
+        <hr>
+        <form id="conversionForm">
+            <label for="pesos">Pesos:</label>
+            <input class="caja1" type="number" placeholder="Ingresa un numero" id="pesos" required>
+            <br>
+            <label for="tipo">Tipo de moneda: </label>
+            <select class="caja1" id="tipo">
+                <option value="dolares" selected>Dolares</option>
+                <option value="euros">Euros</option>
+            </select>
+            <br>
+            <input id="boton" type="button" value="calcular" onclick="conversion()">
+        </form>
+    </div>
+</body>
+</html>
+
+

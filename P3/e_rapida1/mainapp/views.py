@@ -27,3 +27,19 @@ def vision(request):
         'title': 'Vision',
         'content': 'Vision de la empresa'
     })
+    
+def registro(request):
+    return render(request, 'mainapp/vision.html', {
+        'title': 'registro',
+        'content': 'registro de usuario'
+        })
+
+def login_user(request):
+    return render(request, 'mainapp/vision.html', {
+        'title': 'login',
+        'content': 'Vista de login'
+        })
+
+
+def page404(request, exception):
+    return render(request, 'mainapp/error404.html')
